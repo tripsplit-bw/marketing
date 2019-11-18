@@ -1,1 +1,1 @@
-This layout was designed for Lambda School Build Week option "Trip Split" by Issac Moreno of cohort WEB26.
+This layout was designed for Lambda School Build Week option "Trip Split" by Issac Moreno of cohort WEB26.git
