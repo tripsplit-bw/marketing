@@ -1,0 +1,52 @@
+header {
+    max-width: 100%;
+    background: @header-bg;
+
+    #headerContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button{
+                width: 20%;
+            }
+
+            .register {
+                .button(@register, @black, 2%);
+            }
+
+            .logIn {
+                .button(@login, white, 2%);
+            }
+
+            }//BUTTONS
+
+        }//HEADER CONTAINER
+
+
+        .navBar {
+            display: flex;
+            font-size: 8rem;
+            width: 100%;
+            
+            nav {      
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center; 
+                width: 100%;
+                padding: 4%;
+
+                a{
+                    text-decoration: none;
+                    color: @mint;
+                }
+            }
+        }
+    }//HEADER
