@@ -1,0 +1,66 @@
+.product {
+    .flex(space-between, center, 100%);
+    height: 200em;
+    background-color: @jeans;
+    
+    .productInfo {
+        .flex(space-between, center, 55%);
+        border: 2px solid black;
+        height: 100%;
+
+        h3 {
+            font-size: 5rem;
+
+        }
+
+        img {
+            width: 55%;
+        }
+    }
+}//PRODUCT
+
+.why {
+    .flex(space-between, center, 100%);
+    flex-direction: column;
+    height: 200em;
+    background-color: @green;
+
+    .productInfo {
+        .flex(space-around, center, 55%);
+        height: 100%;
+        padding: 5em;
+        font-weight: 650;
+        background: linear-gradient(to right, rgba(90,63,55, 0.6), rgba(44, 119, 68, 0.6));
+        margin: 15em auto;
+
+        .textBox {
+            letter-spacing: 1.5em;
+            line-height: 40em;
+            width: 50%;
+        }
+    }
+    h3 {
+        font-size: 5rem;
+        color: @black;
+    }
+}//WHY
+
+.textSection {
+    .flex(center, center, 100%);
+    height: 200em;
+    background-color: @mint;
+    text-align: center;
+    .area {
+        border: 2px solid black;
+        padding: 5%;
+        align-self: center;
+        .flex(center, center, 60%)
+
+        p {
+            font-weight: 650;
+        }
+    }
+}
+#reverse {
+    background-color: @light-lavender;
+}

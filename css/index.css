@@ -105,7 +105,7 @@ section {
 }
 body {
   line-height: 1.5;
-  width: 1200px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -169,21 +169,43 @@ header #headerContainer .buttons .register {
   border: none;
   border-radius: 20px;
   padding: 1%;
-  font-size: 4rem;
+  font-size: 3rem;
   cursor: pointer;
-  background: linear-gradient(to right, #373b44, #4286f4);
+  background: linear-gradient(to top, #373b44, #d1ffd7);
   color: #161616;
   margin: 2%;
+}
+header #headerContainer .buttons .register:hover {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  color: white;
+  margin: 2%;
+  border: 1px solid white;
 }
 header #headerContainer .buttons .logIn {
   border: none;
   border-radius: 20px;
   padding: 1%;
-  font-size: 4rem;
+  font-size: 3rem;
   cursor: pointer;
-  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
   color: white;
   margin: 2%;
+}
+header #headerContainer .buttons .logIn:hover {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to top, #373b44, #d1ffd7);
+  color: black;
+  margin: 2%;
+  border: 2px solid black;
 }
 header .navBar {
   display: flex;
@@ -200,4 +222,101 @@ header .navBar nav {
 header .navBar nav a {
   text-decoration: none;
   color: #d1ffd7;
+}
+header .border {
+  align-self: center;
+  height: 2em;
+  background-color: black;
+  width: 75%;
+  margin-bottom: 25em;
+}
+section {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200em;
+  background-image: url("../img/headerImage.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+#intro .motto {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4%;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200em;
+  background-color: #95B8D1;
+}
+.product .productInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  border: 2px solid black;
+  height: 100%;
+}
+.product .productInfo h3 {
+  font-size: 5rem;
+}
+.product .productInfo img {
+  width: 55%;
+}
+.why {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  height: 200em;
+  background-color: #8daa91;
+}
+.why .productInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 55%;
+  height: 100%;
+  padding: 5em;
+  font-weight: 650;
+  background: linear-gradient(to right, rgba(90, 63, 55, 0.6), rgba(44, 119, 68, 0.6));
+  margin: 15em auto;
+}
+.why .productInfo .textBox {
+  letter-spacing: 1.5em;
+  line-height: 40em;
+  width: 50%;
+}
+.why h3 {
+  font-size: 5rem;
+  color: #161616;
+}
+.textSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200em;
+  background-color: #d1ffd7;
+  text-align: center;
+}
+.textSection .area {
+  border: 2px solid black;
+  padding: 5%;
+  align-self: center;
+}
+.textSection .area .flex(center, center, 60%) p {
+  font-weight: 650;
+}
+#reverse {
+  background-color: #666a86;
 }

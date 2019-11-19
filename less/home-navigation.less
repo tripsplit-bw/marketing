@@ -20,21 +20,33 @@ header {
 
             .register {
                 .button(@register, @black, 2%);
+
+                &:hover {
+                .button(@login, white, 2%);
+                border: 1px solid white;
+                }
             }
 
             .logIn {
                 .button(@login, white, 2%);
+
+                &:hover {
+                    .button(@register, black, 2%);
+                    border: 2px solid black;
+                }
             }
 
             }//BUTTONS
 
-        }//HEADER CONTAINER
 
+
+    }//HEADER CONTAINER
 
         .navBar {
             display: flex;
             font-size: 8rem;
             width: 100%;
+        
             
             nav {      
                 display: flex;
@@ -49,4 +61,30 @@ header {
                 }
             }
         }
+
+        .border {
+            align-self: center;
+            height: 2em;
+            background-color: black;
+            width: 75%;
+            margin-bottom: 25em;
+        }
     }//HEADER
+
+section{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}   
+#intro {
+    .flex(center, center, 100%);
+    height: 200em;
+    background-image: url("../img/headerImage.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+
+    .motto {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 4%;
+    }
+}
