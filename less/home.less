@@ -1,3 +1,10 @@
+.mainContainer {
+	background: linear-gradient(10deg,#95b8d1, #666a86);
+  background-size:400% 400%;	
+  .flex(center,center, 100%);
+  flex-direction: column;
+}
+
 .why {
   .flex(space-between, center, 100%);
   flex-direction: column;
@@ -186,17 +193,52 @@
 } //REVERSE
 
 .contact {
-  height: 100em;
+  height: 150em;
   text-align: center;
 
   .contactContainer {
-    .flex(center, center, 100%);
+    .flex(space-around, center, 100%);
     flex-direction: column;
+     
+    p {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+    .contactForm {
+      .flex(center,center,100%);
+      flex-direction: column;
+
+
+      input {
+        width: 25em;
+        height: 2.5em;
+
+
+      }
+    }
     h3 {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     p {
+      letter-spacing: 0.15em;
+      padding-top: 1em;
       font-size: 2rem;
     }
-  }
+  } //CONTACT CONTAINER
+
+  #reason {
+    height: 7em;
+    }      
+  .name {
+    margin-bottom: 1em;
+    }
+}//CONTACT
+
+footer {
+  .flex(center, center, 100%);
+  background: @light-lavender;
+  height: 1em;
+  font-size: 5rem;
+  margin-top: 1em;
 }
+

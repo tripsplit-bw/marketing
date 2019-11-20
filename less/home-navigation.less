@@ -8,34 +8,6 @@ header {
         flex-direction: column;
         width: 100%;
 
-        .buttons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            button{
-                width: 20%;
-            }
-
-            .register {
-                .button(@register, @black, 2%);
-
-                &:hover {
-                .button(@login, white, 2%);
-                border: 1px solid white;
-                }
-            }
-
-            .logIn {
-                .button(@login, white, 2%);
-
-                &:hover {
-                    .button(@register, black, 2%);
-                    border: 2px solid black;
-                }
-            }
-
-            }//BUTTONS
 
 
 
@@ -92,3 +64,32 @@ section{
         }
     }
 }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        width: 20%;
+    }
+
+    .register {
+        .button(@register, @black, 2%);
+
+        &:hover {
+        .button(@login, white, 2%);
+        border: 1px solid white;
+        }
+    }
+
+    .logIn {
+        .button(@login, white, 2%);
+
+        &:hover {
+            .button(@register, black, 2%);
+            border: 2px solid black;
+        }
+    }
+
+    }//BUTTONS

@@ -131,10 +131,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.mainContainer {
-  background: linear-gradient(10deg, #95b8d1, #666a86);
-  background-size: 400% 400%;
-}
 img {
   width: 25%;
 }
@@ -148,6 +144,38 @@ h2 {
   font-size: 4rem;
 }
 header {
+  width: 100%;
+  vertical-align: center;
+  height: 50em;
+}
+.navBar .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navBar .logo img {
+  padding-left: 2em;
+  width: 80%;
+}
+.navBar .aboutNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+}
+.navBar .aboutNav nav {
+  padding: 0;
+}
+.navBar .aboutNav .buttons {
+  flex-direction: column;
+}
+.navBar .aboutNav .buttons .register {
+  margin-bottom: 0.5em;
+}
+.navBar .aboutNav .buttons button {
+  width: 110%;
+}
+header {
   max-width: 100%;
 }
 header #headerContainer {
@@ -156,56 +184,6 @@ header #headerContainer {
   text-align: center;
   flex-direction: column;
   width: 100%;
-}
-header #headerContainer .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header #headerContainer .buttons button {
-  width: 20%;
-}
-header #headerContainer .buttons .register {
-  border: none;
-  border-radius: 20px;
-  padding: 1%;
-  font-size: 3rem;
-  cursor: pointer;
-  background: linear-gradient(to top, #373b44, #d1ffd7);
-  color: #161616;
-  margin: 2%;
-}
-header #headerContainer .buttons .register:hover {
-  border: none;
-  border-radius: 20px;
-  padding: 1%;
-  font-size: 3rem;
-  cursor: pointer;
-  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
-  color: white;
-  margin: 2%;
-  border: 1px solid white;
-}
-header #headerContainer .buttons .logIn {
-  border: none;
-  border-radius: 20px;
-  padding: 1%;
-  font-size: 3rem;
-  cursor: pointer;
-  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
-  color: white;
-  margin: 2%;
-}
-header #headerContainer .buttons .logIn:hover {
-  border: none;
-  border-radius: 20px;
-  padding: 1%;
-  font-size: 3rem;
-  cursor: pointer;
-  background: linear-gradient(to top, #373b44, #d1ffd7);
-  color: black;
-  margin: 2%;
-  border: 2px solid black;
 }
 header .navBar {
   display: flex;
@@ -252,6 +230,83 @@ section {
 #intro .motto h2 {
   font-weight: 950;
   font-size: 5rem;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons button {
+  width: 20%;
+}
+.buttons .register {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to top, #373b44, #d1ffd7);
+  color: #161616;
+  margin: 2%;
+}
+.buttons .register:hover {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  color: white;
+  margin: 2%;
+  border: 1px solid white;
+}
+.buttons .logIn {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  color: white;
+  margin: 2%;
+}
+.buttons .logIn:hover {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to top, #373b44, #d1ffd7);
+  color: black;
+  margin: 2%;
+  border: 2px solid black;
+}
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background: linear-gradient(10deg, #95b8d1, #666a86);
+  background-size: 400% 400%;
+  width: 1200px;
+  margin: 0 auto;
+}
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.mainContainer {
+  background: linear-gradient(10deg, #95b8d1, #666a86);
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
 }
 .why {
   display: flex;
@@ -448,19 +503,52 @@ section {
   color: #161616;
 }
 .contact {
-  height: 100em;
+  height: 150em;
   text-align: center;
 }
 .contact .contactContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.contact .contactContainer p {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.contact .contactContainer .contactForm {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   flex-direction: column;
 }
+.contact .contactContainer .contactForm input {
+  width: 25em;
+  height: 2.5em;
+}
 .contact .contactContainer h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .contact .contactContainer p {
+  letter-spacing: 0.15em;
+  padding-top: 1em;
   font-size: 2rem;
+}
+.contact #reason {
+  height: 7em;
+}
+.contact .name {
+  margin-bottom: 1em;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #666a86;
+  height: 1em;
+  font-size: 5rem;
+  margin-top: 1em;
 }
