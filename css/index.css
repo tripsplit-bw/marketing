@@ -143,10 +143,12 @@ h1 {
 h2 {
   font-size: 4rem;
 }
-header {
+.aboutHeader {
   width: 100%;
-  vertical-align: center;
-  height: 50em;
+  max-width: 100%;
+  border-bottom: 2px solid #161616;
+  height: 80em;
+  margin-bottom: 3em;
 }
 .navBar .logo {
   display: flex;
@@ -168,15 +170,21 @@ header {
 }
 .navBar .aboutNav .buttons {
   flex-direction: column;
+  height: 120%;
 }
 .navBar .aboutNav .buttons .register {
   margin-bottom: 0.5em;
 }
 .navBar .aboutNav .buttons button {
+  border-radius: 10px;
   width: 110%;
+}
+.navBar .aboutNav .buttons button:hover {
+  border: 0px;
 }
 header {
   max-width: 100%;
+  height: 200em;
 }
 header #headerContainer {
   display: flex;
@@ -285,11 +293,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   flex-direction: column;
   background: linear-gradient(10deg, #95b8d1, #666a86);
   background-size: 400% 400%;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 #about {
@@ -298,6 +305,66 @@ section {
   align-items: center;
   width: 100%;
   flex-direction: column;
+  padding-bottom: 50em;
+  height: 400em;
+}
+#about .text {
+  letter-spacing: 2.5em;
+  background: #161616;
+  color: #d1ffd7;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 55em;
+}
+.students {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.students .studentInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  flex-direction: column;
+  border: 2px solid black;
+  text-align: center;
+  flex-wrap: wrap;
+  height: 60%;
+}
+.students .studentInfo img {
+  height: 50%;
+  width: 60%;
+  border-radius: 360px;
+}
+.students .studentInfo p {
+  font-weight: 650;
+  font-size: 3rem;
+}
+.students #vinnie {
+  background: linear-gradient(to bottom, #24272c, #99d1a1);
+}
+.students #alve {
+  background: linear-gradient(to bottom, #161f1f, #95B8D1);
+}
+.students #grissobel {
+  background: linear-gradient(to bottom, #161f1f, #9b8daa);
+}
+.students #daniel {
+  background: linear-gradient(to bottom, #161f1f, #8daa91);
+}
+.students #issac {
+  background: linear-gradient(to bottom, #24272c, #7e3b3b);
+}
+#aboutFooter {
+  width: 100%;
+  position: relative;
+  top: 2em;
+  padding: 2% 0;
+  font-size: 3.5rem;
+  font-weight: 900;
 }
 .mainContainer {
   background: linear-gradient(10deg, #95b8d1, #666a86);

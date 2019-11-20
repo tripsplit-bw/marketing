@@ -1,7 +1,9 @@
-header {
+.aboutHeader {
     width: 100%;
-    vertical-align: center;
-    height: 50em;
+    max-width: 100%;
+    border-bottom: 2px solid @black;
+    height: 80em;
+    margin-bottom: 3em;
 }
 .navBar {
 
@@ -24,13 +26,19 @@ header {
         }
         .buttons {
             flex-direction: column;
-
+            height: 120%;
             .register {
                 margin-bottom: 0.5em;
             }
 
+
             button {
+                border-radius: 10px;
                 width: 110%;
+
+                &:hover {
+                    border: 0px;
+                }
             }
         }
 
