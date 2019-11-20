@@ -1,5 +1,89 @@
-.product {
+.why {
     .flex(space-between, center, 100%);
+    flex-direction: column;
+    height: 220%;
+    background-color: @green;
+    padding-bottom: 20em;
+    padding-top: 20em;
+
+    .productInfo {
+        .flex(space-around, center, 75%);
+        height: 100%;
+        padding: 5em;
+        font-weight: 650;
+        background: linear-gradient(to right, rgba(90,63,55, 0.6), rgba(44, 119, 68, 0.6));
+
+
+
+        .textBox {
+            letter-spacing: 1.5em;
+            height: 90%;
+            line-height: 5120%;
+            width: 435em;
+        }
+    }
+
+    .border {
+        height: 85%;
+        border: 2px solid black;
+    }
+    img {
+        height: 95%;
+        width : 450em;
+    }
+    h3 {
+        font-size: 5rem;
+        color: @black;
+        padding-bottom: 1em;
+    }
+    p {
+        font-size: 2.5rem;
+    }
+}//WHY
+
+.textSection {
+    .flex(center, center, 100%);
+    
+    height: 220em;
+    background-color: rgba(0,0,0, 0.0);
+    text-align: center;
+
+
+    h3 {
+        font-size: 10rem;
+    }
+    p {
+        font-weight: 650;
+    }
+
+    .textContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55%;
+        height: 85%;
+         background-image: url("../img/currency.jpg");        
+         background-size: 100%;
+        background-repeat: none;
+        max-width: 100;
+   
+    .area {
+        .flex(center, center, 100%);
+       height: 100%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.322), rgba(241, 250, 219, 0.767));
+
+        .text {
+            .flex(center, center, 80%);
+            flex-direction: column;
+        }
+    } 
+}//TEXT CONTAINER
+
+}//TEXT SECTION
+
+
+.product {
+    .flex(center, center, 100%);
     height: 200em;
     background-color: @jeans;
     
@@ -19,48 +103,7 @@
     }
 }//PRODUCT
 
-.why {
-    .flex(space-between, center, 100%);
-    flex-direction: column;
-    height: 200em;
-    background-color: @green;
 
-    .productInfo {
-        .flex(space-around, center, 55%);
-        height: 100%;
-        padding: 5em;
-        font-weight: 650;
-        background: linear-gradient(to right, rgba(90,63,55, 0.6), rgba(44, 119, 68, 0.6));
-        margin: 15em auto;
-
-        .textBox {
-            letter-spacing: 1.5em;
-            line-height: 40em;
-            width: 50%;
-        }
-    }
-    h3 {
-        font-size: 5rem;
-        color: @black;
-    }
-}//WHY
-
-.textSection {
-    .flex(center, center, 100%);
-    height: 200em;
-    background-color: @mint;
-    text-align: center;
-    .area {
-        border: 2px solid black;
-        padding: 5%;
-        align-self: center;
-        .flex(center, center, 60%)
-
-        p {
-            font-weight: 650;
-        }
-    }
-}
 #reverse {
-    background-color: @light-lavender;
+    background-color: rgba(0,0,0, 0.0);
 }
