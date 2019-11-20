@@ -147,9 +147,6 @@ h1 {
 h2 {
   font-size: 4rem;
 }
-p {
-  font-size: 2rem;
-}
 header {
   max-width: 100%;
 }
@@ -252,6 +249,10 @@ section {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 4%;
 }
+#intro .motto h2 {
+  font-weight: 950;
+  font-size: 5rem;
+}
 .why {
   display: flex;
   justify-content: space-between;
@@ -259,7 +260,7 @@ section {
   width: 100%;
   flex-direction: column;
   height: 220%;
-  background-color: #8daa91;
+  background: linear-gradient(to top, #8daa91, #95B8D1);
   padding-bottom: 20em;
   padding-top: 20em;
 }
@@ -291,6 +292,7 @@ section {
   font-size: 5rem;
   color: #161616;
   padding-bottom: 1em;
+  font-weight: 900;
 }
 .why p {
   font-size: 2.5rem;
@@ -301,14 +303,16 @@ section {
   align-items: center;
   width: 100%;
   height: 220em;
-  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(to top, #8daa91, #95B8D1);
   text-align: center;
 }
 .textSection h3 {
   font-size: 10rem;
 }
 .textSection p {
+  font-size: 2.2rem;
   font-weight: 650;
+  color: #161616;
 }
 .textSection .textContainer {
   display: flex;
@@ -338,26 +342,123 @@ section {
 }
 .product {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 200em;
-  background-color: #95B8D1;
+  height: 200%;
+  background: linear-gradient(to top, #8daa91, #95B8D1);
+  padding-bottom: 20em;
+  padding-top: 20em;
 }
 .product .productInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 55%;
-  border: 2px solid black;
-  height: 100%;
+  width: 90%;
+  height: 85%;
 }
-.product .productInfo h3 {
+.product .productInfo .titleImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+  padding-right: 40em;
+}
+.product .productInfo .titleImage h3 {
+  padding-bottom: 0.5em;
   font-size: 5rem;
 }
-.product .productInfo img {
-  width: 55%;
+.product .productInfo .titleImage img {
+  width: 650em;
+}
+.product .productInfo .border {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 350em;
+}
+.product .productInfo .textBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: 4520%;
+  letter-spacing: 1.5em;
+  padding-top: 30em;
+  padding-left: 40em;
+}
+.product .productInfo .textBox p {
+  font-weight: 650;
+  font-size: 2rem;
+  color: #161616;
 }
 #reverse {
-  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 200%;
+  padding-bottom: 20em;
+  padding-top: 20em;
+  background: linear-gradient(to top, #8daa91, #95B8D1);
+}
+#reverse .productInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  flex-direction: row-reverse;
+  height: 85%;
+}
+#reverse .productInfo .titleImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+  padding-left: 40em;
+}
+#reverse .productInfo .titleImage h3 {
+  padding-bottom: 0.5em;
+  font-size: 5rem;
+}
+#reverse .productInfo .titleImage img {
+  width: 650em;
+}
+#reverse .productInfo .border {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 350em;
+}
+#reverse .productInfo .textBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: 4520%;
+  letter-spacing: 1.5em;
+  padding-top: 30em;
+  padding-right: 40em;
+}
+#reverse .productInfo .textBox p {
+  font-weight: 650;
+  font-size: 2rem;
+  color: #161616;
+}
+.contact {
+  height: 100em;
+  text-align: center;
+}
+.contact .contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.contact .contactContainer h3 {
+  font-size: 2.5rem;
+}
+.contact .contactContainer p {
+  font-size: 2rem;
 }
