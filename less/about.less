@@ -1,0 +1,81 @@
+
+.aboutContainer {
+    .flex(center,center, 100%);
+    flex-direction: column;
+    background: linear-gradient(10deg,#95b8d1, #666a86);
+    background-size:400% 400%;	
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#about {
+    .flex(center, center, 100%);
+    flex-direction: column;
+    padding-bottom: 50em;
+    height: 400em;
+
+    .text { 
+        letter-spacing: 2.5em;
+        background: @black;
+        color: @mint;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 55em;
+    }
+    
+}    
+.students {
+    .flex(center, center, 100%);
+    flex-wrap: wrap;
+
+
+    .studentInfo {
+        .flex(center, center, 25%);
+        flex-direction: column;
+        border: 2px solid black;
+        text-align: center;
+        flex-wrap: wrap;
+        height: 60%;
+
+        img {
+            height: 50%;
+            width: 60%;
+            border-radius: 360px;
+        }
+        p {
+            // padding-top: 1em;
+            font-weight: 650;
+            font-size: 3rem;
+        }
+    }//STUDENT INFO
+    
+    #vinnie {
+        background: @vinnie;
+    }
+
+    #alve {
+        background: @alve;
+    }
+
+    #grissobel {
+        background: @grissobel;
+    }
+
+    #daniel {
+        background: @daniel;
+    }
+
+    #issac {
+        background: @issac;
+    }
+}
+
+#aboutFooter {
+    width: 100%;
+    position: relative;
+    top: 2em;
+    padding: 2% 0;
+    font-size: 3.5rem;
+    font-weight: 900;
+}

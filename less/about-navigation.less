@@ -1,0 +1,46 @@
+.aboutHeader {
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 2px solid @black;
+    height: 80em;
+    margin-bottom: 3em;
+}
+.navBar {
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+            
+        img {
+            padding-left: 2em;
+            width: 80%;
+        }
+    }
+
+    .aboutNav {
+        .flex(space-around, flex-end, 100%);
+
+        nav {
+            padding: 0;
+        }
+        .buttons {
+            flex-direction: column;
+            height: 120%;
+            .register {
+                margin-bottom: 0.5em;
+            }
+
+
+            button {
+                border-radius: 10px;
+                width: 110%;
+
+                &:hover {
+                    border: 0px;
+                }
+            }
+        }
+
+    }
+}
