@@ -14,53 +14,108 @@
     <title>Document</title>
 </head>
 <body>
+<div class = "mainContainer">
     <header>
-        <h1>Trip Split</h1>
-        <button>Register</button>
-        <span><button>Log in</button></span>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="#product">Product</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+        <div id = "headerContainer">
+            
+            <h1 class = "logo">
+             <img src="img/blackLogo.png" alt="">
+            </h1>
 
-    <section id = "intro">
-        <div class = "motto">
-            <h2>Embrace Conveinence</h2>
-            <p>Trip Split is here to save the day... or at least make it fair.</p>
+            <div class = "buttons">
+                <button class = "register">Register</button>
+                <button class = "logIn">Log in</button>
+
+            </div>
+
+            <div class = "navBar">
+                <nav class = "mainNav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#product">Product</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class = "border">
+            </div>
         </div>
-    </section>
+    </header>  
 
-    <section class = "product">
+        <section id = "intro">
+            <div class = "motto">
+                <h2>Embrace Conveinence</h2>
+                <p>Trip Split is here to save the day... or at least make it fair.</p>
+            </div>
+        </section>  
+
+
+
+    <section class = "why" id = "product">
         <h3>Why use Trip Split?</h3>
         <div class = "productInfo">
             <img src="img/trunk.jpg" alt="2 girls on a road trip break">
+            <div class = "border">
+
+            </div>
             <div class ="textBox">
                 <p>Planning on taking a road trip with some friends or family? Our app was designed to split the cost and notify the amount owed to whom it is assigned. It is a great way to keep track of your spending on a trip, and avoiding a situation where one person ends up paying way more than others because of unexpected expenses. At the end of the day, it is nice to have one less thing keeping you up at night.</p>
             </div>    
         </div>
+    
     </section>
+    
 
     <section class = "textSection">
-        <div class ="area">
-            <p>Our app makes it easy to monitor the spending from a trip. With features like payment schedules,  adding to the trip total with pictures of receipts and adding unlimited amount of people to share the costs by percentage. You can pay off with cash and manually update the amount owed, or our app provides fast and secure bank to bank transfers and  credit card payments.The layout was designed to be easy and intuitive for everyone to use. </p>
-        </div>
-    </section>
-
-    <section class = "product" id = "reverse">
-        <h3>Modern</h3>
-        <div class = "productInfo">
-            <img src="img/moneySquare.jpg" alt="American dollar cut into squares">
-            <div class = "textBox">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class = textContainer>
+            <div class ="area">
+                <div class ="text">
+                    <h3>Simple</h3>
+                    <p>Our app makes it easy to monitor the spending from a trip. With features like payment schedules,  adding to the trip total with pictures of receipts and adding unlimited amount of people to share the costs by percentage. You can pay off with cash and manually update the amount owed, or our app provides fast and secure bank to bank transfers and  credit card payments.The layout was designed to be easy and intuitive for everyone to use. </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class = "contact">
+    <section class = "product">
+        
+        <div class = "productInfo">
+
+                <div class = "titleImage">
+                    <h3>Modern</h3>
+                    <img src="img/moneySquare.jpg" alt="American dollar cut into squares">
+                </div>
+                <div class = "border">
+
+                </div>
+                <div class = "textBox">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+        </div>
+    </section>
+
+    <section class = "product" id = "reverse">
+        
+        <div class = "productInfo">
+            <div class ="titleImage">
+                <h3>Conveinent</h3>
+                <img src="img/cardSplit.jpg" alt="2 girls on a road trip break">
+            </div>
+            <div class = "border">
+
+            </div>
+            <div class ="textBox">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>    
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class = "contactContainer">
+            <div class = "text">
+                <h3>Have any questions or concerns?</h3>
+                <p>Fill out the form below with the requested information and someone from our support team will reach out to you as soon as possible</p>
+            </div>
             <form class = "contactForm">
                 <input type="text" name="name" id = "name" placeholder="Name">
                 <input type="text" name="email"  id = "email" placeholder="Email">
@@ -72,5 +127,6 @@
     <footer>
         ©Lambda School Training Program. This layout was designed by Issac Moreno
     </footer>
+</div>
 </body>
 </html>

@@ -1,0 +1,466 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #161616;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.mainContainer {
+  background: linear-gradient(10deg, #95b8d1, #666a86);
+  background-size: 400% 400%;
+}
+img {
+  width: 25%;
+}
+p {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+header {
+  max-width: 100%;
+}
+header #headerContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+}
+header #headerContainer .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #headerContainer .buttons button {
+  width: 20%;
+}
+header #headerContainer .buttons .register {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to top, #373b44, #d1ffd7);
+  color: #161616;
+  margin: 2%;
+}
+header #headerContainer .buttons .register:hover {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  color: white;
+  margin: 2%;
+  border: 1px solid white;
+}
+header #headerContainer .buttons .logIn {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  color: white;
+  margin: 2%;
+}
+header #headerContainer .buttons .logIn:hover {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to top, #373b44, #d1ffd7);
+  color: black;
+  margin: 2%;
+  border: 2px solid black;
+}
+header .navBar {
+  display: flex;
+  font-size: 8rem;
+  width: 100%;
+}
+header .navBar nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 4%;
+}
+header .navBar nav a {
+  text-decoration: none;
+  color: #d1ffd7;
+}
+header .border {
+  align-self: center;
+  height: 2em;
+  background-color: black;
+  width: 75%;
+  margin-bottom: 25em;
+}
+section {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200em;
+  background-image: url("../img/headerImage.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+#intro .motto {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4%;
+}
+#intro .motto h2 {
+  font-weight: 950;
+  font-size: 5rem;
+}
+.why {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  height: 220%;
+  background: linear-gradient(to top, #8daa91, #95B8D1);
+  padding-bottom: 20em;
+  padding-top: 20em;
+}
+.why .productInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+  padding: 5em;
+  font-weight: 650;
+  background: linear-gradient(to right, rgba(90, 63, 55, 0.6), rgba(44, 119, 68, 0.6));
+}
+.why .productInfo .textBox {
+  letter-spacing: 1.5em;
+  height: 90%;
+  line-height: 5120%;
+  width: 435em;
+}
+.why .border {
+  height: 85%;
+  border: 2px solid black;
+}
+.why img {
+  height: 95%;
+  width: 450em;
+}
+.why h3 {
+  font-size: 5rem;
+  color: #161616;
+  padding-bottom: 1em;
+  font-weight: 900;
+}
+.why p {
+  font-size: 2.5rem;
+}
+.textSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 220em;
+  background: linear-gradient(to top, #8daa91, #95B8D1);
+  text-align: center;
+}
+.textSection h3 {
+  font-size: 10rem;
+}
+.textSection p {
+  font-size: 2.2rem;
+  font-weight: 650;
+  color: #161616;
+}
+.textSection .textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 85%;
+  background-image: url("../img/currency.jpg");
+  background-size: 100%;
+  background-repeat: none;
+  max-width: 100;
+}
+.textSection .textContainer .area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.322), rgba(241, 250, 219, 0.767));
+}
+.textSection .textContainer .area .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-direction: column;
+}
+.product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(to top, #8daa91, #95B8D1);
+  padding-bottom: 20em;
+  padding-top: 20em;
+}
+.product .productInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 85%;
+}
+.product .productInfo .titleImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+  padding-right: 40em;
+}
+.product .productInfo .titleImage h3 {
+  padding-bottom: 0.5em;
+  font-size: 5rem;
+}
+.product .productInfo .titleImage img {
+  width: 650em;
+}
+.product .productInfo .border {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 350em;
+}
+.product .productInfo .textBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: 4520%;
+  letter-spacing: 1.5em;
+  padding-top: 30em;
+  padding-left: 40em;
+}
+.product .productInfo .textBox p {
+  font-weight: 650;
+  font-size: 2rem;
+  color: #161616;
+}
+#reverse {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 220%;
+  padding-bottom: 20em;
+  padding-top: 20em;
+  background: linear-gradient(to top, #8daa91, #95B8D1);
+}
+#reverse .productInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  flex-direction: row-reverse;
+  height: 85%;
+}
+#reverse .productInfo .titleImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+  padding-right: 0;
+  padding-left: 40em;
+}
+#reverse .productInfo .titleImage h3 {
+  padding-bottom: 0.5em;
+  font-size: 5rem;
+}
+#reverse .productInfo .titleImage img {
+  width: 650em;
+}
+#reverse .productInfo .border {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 350em;
+}
+#reverse .productInfo .textBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: 4520%;
+  letter-spacing: 1.5em;
+  padding-top: 30em;
+  padding-left: 0;
+  padding-right: 40em;
+}
+#reverse .productInfo .textBox p {
+  font-weight: 650;
+  font-size: 2rem;
+  color: #161616;
+}
+.contact {
+  height: 100em;
+  text-align: center;
+}
+.contact .contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.contact .contactContainer h3 {
+  font-size: 2.5rem;
+}
+.contact .contactContainer p {
+  font-size: 2rem;
+}
