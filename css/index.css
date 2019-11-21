@@ -232,7 +232,7 @@ header {
 }
 @media (max-width:768px) {
   header {
-    height: 100%;
+    height: 130em;
   }
 }
 header #headerContainer {
@@ -240,6 +240,19 @@ header #headerContainer {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  width: 100%;
+}
+@media (max-width:768px) {
+  header #headerContainer {
+    height: 100%;
+  }
+}
+@media (max-width:768px) {
+  header #headerContainer .logo {
+    width: 100%;
+  }
+}
+header #headerContainer .logo img {
   width: 100%;
 }
 header .navBar {
@@ -742,7 +755,7 @@ section {
   #reverse {
     padding: 0;
     text-align: center;
-    height: 400em;
+    height: 420em;
   }
 }
 #reverse .productInfo {
