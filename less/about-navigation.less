@@ -4,22 +4,49 @@
     border-bottom: 2px solid @black;
     height: 80em;
     margin-bottom: 3em;
+
+    @media @phone {
+        height: 160%;
+    }
+
 }
 .navBar {
+    @media @phone {
+        .flex(center,center, 100%);
+        flex-direction: column;
+    }
 
     .logo {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        width: 20%;
+
+        @media @phone{
+            justify-content: center;
+            width: 100%;
+        }
             
         img {
+            width: 100%;
             padding-left: 2em;
-            width: 80%;
+
+            @media @phone {
+                padding:0;
+                width:15%;
+            }
         }
     }
 
     .aboutNav {
         .flex(space-around, flex-end, 100%);
+
+       @media @phone {
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+       }
+
 
         nav {
             padding: 0;

@@ -143,6 +143,9 @@ h1 {
 h2 {
   font-size: 4rem;
 }
+h3 {
+  text-align: center;
+}
 .aboutHeader {
   width: 100%;
   max-width: 100%;
@@ -150,20 +153,54 @@ h2 {
   height: 80em;
   margin-bottom: 3em;
 }
+@media (max-width:768px) {
+  .aboutHeader {
+    height: 160%;
+  }
+}
+@media (max-width:768px) {
+  .navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .navBar .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 20%;
+}
+@media (max-width:768px) {
+  .navBar .logo {
+    justify-content: center;
+    width: 100%;
+  }
 }
 .navBar .logo img {
+  width: 100%;
   padding-left: 2em;
-  width: 80%;
+}
+@media (max-width:768px) {
+  .navBar .logo img {
+    padding: 0;
+    width: 15%;
+  }
 }
 .navBar .aboutNav {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
   width: 100%;
+}
+@media (max-width:768px) {
+  .navBar .aboutNav {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .navBar .aboutNav nav {
   padding: 0;
@@ -183,8 +220,20 @@ h2 {
   border: 0px;
 }
 header {
+  width: 100%;
   max-width: 100%;
-  height: 200em;
+  height: 190em;
+}
+@media (max-width:1024px) {
+  header {
+    width: 80%;
+    height: 120em;
+  }
+}
+@media (max-width:768px) {
+  header {
+    height: 100%;
+  }
 }
 header #headerContainer {
   display: flex;
@@ -198,6 +247,12 @@ header .navBar {
   font-size: 8rem;
   width: 100%;
 }
+@media (max-width:768px) {
+  header .navBar {
+    justify-content: space-around;
+    font-size: 5rem;
+  }
+}
 header .navBar nav {
   display: flex;
   justify-content: space-evenly;
@@ -208,6 +263,14 @@ header .navBar nav {
 header .navBar nav a {
   text-decoration: none;
   color: #d1ffd7;
+}
+header .navBar nav a:hover {
+  color: white;
+}
+@media (max-width:768px) {
+  header .navBar nav a {
+    padding: 2.5%;
+  }
 }
 header .border {
   align-self: center;
@@ -239,6 +302,9 @@ section {
   font-weight: 950;
   font-size: 5rem;
 }
+#intro .motto p {
+  font-size: 2.5rem;
+}
 .buttons {
   display: flex;
   justify-content: center;
@@ -246,6 +312,11 @@ section {
 }
 .buttons button {
   width: 20%;
+}
+@media (max-width:768px) {
+  .buttons button {
+    width: 50%;
+  }
 }
 .buttons .register {
   border: none;
@@ -299,6 +370,11 @@ section {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width:768px) {
+  .aboutContainer {
+    height: 100%;
+  }
+}
 #about {
   display: flex;
   justify-content: center;
@@ -306,7 +382,6 @@ section {
   width: 100%;
   flex-direction: column;
   padding-bottom: 50em;
-  height: 400em;
 }
 #about .text {
   letter-spacing: 2.5em;
@@ -323,6 +398,14 @@ section {
   width: 100%;
   flex-wrap: wrap;
 }
+@media (max-width:768px) {
+  .students {
+    flex-wrap: unset;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+  }
+}
 .students .studentInfo {
   display: flex;
   justify-content: center;
@@ -331,17 +414,47 @@ section {
   flex-direction: column;
   border: 2px solid black;
   text-align: center;
-  flex-wrap: wrap;
   height: 60%;
+}
+@media (max-width:1024px) {
+  .students .studentInfo {
+    width: 30%;
+  }
+}
+@media (max-width:768px) {
+  .students .studentInfo {
+    width: 80%;
+  }
+}
+.students .studentInfo a {
+  text-decoration: none;
+  color: #161616;
 }
 .students .studentInfo img {
   height: 50%;
-  width: 60%;
+  width: 95%;
   border-radius: 360px;
 }
+@media (max-width:768px) {
+  .students .studentInfo img {
+    width: 100%;
+  }
+}
 .students .studentInfo p {
+  letter-spacing: 0.15em;
   font-weight: 650;
   font-size: 3rem;
+}
+@media (max-width:768px) {
+  .students .studentInfo p {
+    font-size: 4rem;
+  }
+}
+.students .studentInfo .underline {
+  text-decoration: underline;
+}
+.students .studentInfo .italic {
+  font-style: oblique;
 }
 .students #vinnie {
   background: linear-gradient(to bottom, #24272c, #99d1a1);
@@ -365,6 +478,11 @@ section {
   padding: 2% 0;
   font-size: 3.5rem;
   font-weight: 900;
+}
+@media (max-width:768px) {
+  #aboutFooter {
+    top: 0;
+  }
 }
 .mainContainer {
   background: linear-gradient(10deg, #95b8d1, #666a86);
@@ -396,21 +514,49 @@ section {
   font-weight: 650;
   background: linear-gradient(to right, rgba(90, 63, 55, 0.6), rgba(44, 119, 68, 0.6));
 }
+@media (max-width:768px) {
+  .why .productInfo {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+}
 .why .productInfo .textBox {
   letter-spacing: 1.5em;
   height: 90%;
   line-height: 5120%;
   width: 435em;
 }
+@media (max-width:768px) {
+  .why .productInfo .textBox {
+    width: 90%;
+  }
+}
 .why .border {
   height: 85%;
   border: 2px solid black;
+}
+@media (max-width:768px) {
+  .why .border {
+    border: none;
+  }
 }
 .why img {
   height: 95%;
   width: 450em;
 }
+@media (max-width:1024px) {
+  .why img {
+    width: 320em;
+  }
+}
+@media (max-width:768px) {
+  .why img {
+    width: 100%;
+  }
+}
 .why h3 {
+  text-align: center;
   font-size: 5rem;
   color: #161616;
   padding-bottom: 1em;
@@ -418,6 +564,11 @@ section {
 }
 .why p {
   font-size: 2.5rem;
+}
+@media (max-width:1024px) {
+  .why p {
+    font-size: 2rem;
+  }
 }
 .textSection {
   display: flex;
@@ -428,13 +579,30 @@ section {
   background: linear-gradient(to top, #8daa91, #95B8D1);
   text-align: center;
 }
+@media (max-width:768px) {
+  .textSection {
+    height: 180em;
+  }
+}
 .textSection h3 {
   font-size: 10rem;
+}
+@media (max-width:768px) {
+  .textSection h3 {
+    font-size: 8rem;
+  }
 }
 .textSection p {
   font-size: 2.2rem;
   font-weight: 650;
   color: #161616;
+}
+@media (max-width:768px) {
+  .textSection p {
+    font-size: 1.7rem;
+    line-height: 1em;
+    letter-spacing: 0.3em;
+  }
 }
 .textSection .textContainer {
   display: flex;
@@ -444,8 +612,13 @@ section {
   height: 85%;
   background-image: url("../img/currency.jpg");
   background-size: 100%;
-  background-repeat: none;
   max-width: 100;
+}
+@media (max-width:768px) {
+  .textSection .textContainer {
+    width: 100%;
+    height: 100%;
+  }
 }
 .textSection .textContainer .area {
   display: flex;
@@ -462,6 +635,11 @@ section {
   width: 80%;
   flex-direction: column;
 }
+@media (max-width:768px) {
+  .textSection .textContainer .area .text {
+    width: 95%;
+  }
+}
 .product {
   display: flex;
   justify-content: space-around;
@@ -472,12 +650,24 @@ section {
   padding-bottom: 20em;
   padding-top: 20em;
 }
+@media (max-width:768px) {
+  .product {
+    flex-direction: column;
+    padding: 0;
+    height: 430em;
+  }
+}
 .product .productInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
   height: 85%;
+}
+@media (max-width:768px) {
+  .product .productInfo {
+    flex-direction: column;
+  }
 }
 .product .productInfo .titleImage {
   display: flex;
@@ -487,6 +677,12 @@ section {
   flex-direction: column;
   padding-right: 40em;
 }
+@media (max-width:768px) {
+  .product .productInfo .titleImage {
+    padding: 0;
+    width: 100%;
+  }
+}
 .product .productInfo .titleImage h3 {
   padding-bottom: 0.5em;
   font-size: 5rem;
@@ -494,10 +690,22 @@ section {
 .product .productInfo .titleImage img {
   width: 650em;
 }
+@media (max-width:768px) {
+  .product .productInfo .titleImage img {
+    width: 110%;
+    margin-bottom: 50em;
+  }
+}
 .product .productInfo .border {
   border-left: 2px solid black;
   border-right: 2px solid black;
   height: 350em;
+}
+@media (max-width:768px) {
+  .product .productInfo .border {
+    border: 0;
+    height: 0;
+  }
 }
 .product .productInfo .textBox {
   display: flex;
@@ -509,6 +717,12 @@ section {
   padding-top: 30em;
   padding-left: 40em;
 }
+@media (max-width:768px) {
+  .product .productInfo .textBox {
+    padding: 0;
+    text-align: center;
+  }
+}
 .product .productInfo .textBox p {
   font-weight: 650;
   font-size: 2rem;
@@ -516,13 +730,20 @@ section {
 }
 #reverse {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 220%;
   padding-bottom: 20em;
   padding-top: 20em;
   background: linear-gradient(to top, #8daa91, #95B8D1);
+}
+@media (max-width:768px) {
+  #reverse {
+    padding: 0;
+    text-align: center;
+    height: 400em;
+  }
 }
 #reverse .productInfo {
   display: flex;
@@ -531,6 +752,12 @@ section {
   width: 90%;
   flex-direction: row-reverse;
   height: 85%;
+}
+@media (max-width:768px) {
+  #reverse .productInfo {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 #reverse .productInfo .titleImage {
   display: flex;
@@ -541,6 +768,12 @@ section {
   padding-right: 0;
   padding-left: 40em;
 }
+@media (max-width:768px) {
+  #reverse .productInfo .titleImage {
+    width: 110%;
+    padding: 0;
+  }
+}
 #reverse .productInfo .titleImage h3 {
   padding-bottom: 0.5em;
   font-size: 5rem;
@@ -548,10 +781,22 @@ section {
 #reverse .productInfo .titleImage img {
   width: 650em;
 }
+@media (max-width:768px) {
+  #reverse .productInfo .titleImage img {
+    width: 100%;
+    margin-bottom: 50em;
+  }
+}
 #reverse .productInfo .border {
   border-left: 2px solid black;
   border-right: 2px solid black;
   height: 350em;
+}
+@media (max-width:768px) {
+  #reverse .productInfo .border {
+    border: none;
+    height: 0;
+  }
 }
 #reverse .productInfo .textBox {
   display: flex;
@@ -564,6 +809,12 @@ section {
   padding-left: 0;
   padding-right: 40em;
 }
+@media (max-width:768px) {
+  #reverse .productInfo .textBox {
+    padding: 0;
+    text-align: center;
+  }
+}
 #reverse .productInfo .textBox p {
   font-weight: 650;
   font-size: 2rem;
@@ -572,6 +823,11 @@ section {
 .contact {
   height: 150em;
   text-align: center;
+}
+@media (max-width:768px) {
+  .contact {
+    height: 200em;
+  }
 }
 .contact .contactContainer {
   display: flex;
@@ -618,4 +874,11 @@ footer {
   height: 1em;
   font-size: 5rem;
   margin-top: 1em;
+}
+@media (max-width:768px) {
+  footer {
+    font-size: 3rem;
+    height: 2em;
+    text-align: center;
+  }
 }
