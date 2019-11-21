@@ -153,12 +153,12 @@ h3 {
   height: 80em;
   margin-bottom: 3em;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .aboutHeader {
     height: 160%;
   }
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .navBar {
     display: flex;
     justify-content: center;
@@ -173,7 +173,7 @@ h3 {
   align-items: center;
   width: 20%;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .navBar .logo {
     justify-content: center;
     width: 100%;
@@ -183,7 +183,7 @@ h3 {
   width: 100%;
   padding-left: 2em;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .navBar .logo img {
     padding: 0;
     width: 15%;
@@ -195,7 +195,7 @@ h3 {
   align-items: flex-end;
   width: 100%;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .navBar .aboutNav {
     justify-content: center;
     align-items: center;
@@ -224,15 +224,15 @@ header {
   max-width: 100%;
   height: 190em;
 }
-@media (max-width:1024px) {
+@media (max-width:1100px) {
   header {
     width: 80%;
-    height: 120em;
+    height: 150em;
   }
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   header {
-    height: 100%;
+    width: 90%;
   }
 }
 header #headerContainer {
@@ -241,14 +241,36 @@ header #headerContainer {
   text-align: center;
   flex-direction: column;
   width: 100%;
+  padding-top: 25em;
+}
+@media (max-width:1100px) {
+  header #headerContainer .logo {
+    width: 100%;
+  }
+}
+@media (max-width:420px) {
+  header #headerContainer .logo {
+    width: 100%;
+  }
+}
+@media (max-width:1100px) {
+  header #headerContainer .logo img {
+    width: 55%;
+  }
+}
+@media (max-width:420px) {
+  header #headerContainer .logo img {
+    width: 80%;
+  }
 }
 header .navBar {
   display: flex;
   font-size: 8rem;
   width: 100%;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   header .navBar {
+    flex-direction: column;
     justify-content: space-around;
     font-size: 5rem;
   }
@@ -267,7 +289,7 @@ header .navBar nav a {
 header .navBar nav a:hover {
   color: white;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   header .navBar nav a {
     padding: 2.5%;
   }
@@ -310,10 +332,20 @@ section {
   justify-content: center;
   align-items: center;
 }
+@media (max-width:420px) {
+  .buttons {
+    flex-direction: column-reverse;
+  }
+}
 .buttons button {
   width: 20%;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .buttons button {
+    width: 40%;
+  }
+}
+@media (max-width:420px) {
   .buttons button {
     width: 50%;
   }
@@ -346,7 +378,7 @@ section {
   font-size: 3rem;
   cursor: pointer;
   background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
-  color: white;
+  color: #d1ffd7;
   margin: 2%;
 }
 .buttons .logIn:hover {
@@ -356,7 +388,7 @@ section {
   font-size: 3rem;
   cursor: pointer;
   background: linear-gradient(to top, #373b44, #d1ffd7);
-  color: black;
+  color: white;
   margin: 2%;
   border: 2px solid black;
 }
@@ -370,7 +402,7 @@ section {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .aboutContainer {
     height: 100%;
   }
@@ -398,7 +430,7 @@ section {
   width: 100%;
   flex-wrap: wrap;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .students {
     flex-wrap: unset;
     flex-direction: column;
@@ -416,12 +448,12 @@ section {
   text-align: center;
   height: 60%;
 }
-@media (max-width:1024px) {
+@media (max-width:1100px) {
   .students .studentInfo {
     width: 30%;
   }
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .students .studentInfo {
     width: 80%;
   }
@@ -435,7 +467,7 @@ section {
   width: 95%;
   border-radius: 360px;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .students .studentInfo img {
     width: 100%;
   }
@@ -445,7 +477,7 @@ section {
   font-weight: 650;
   font-size: 3rem;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .students .studentInfo p {
     font-size: 4rem;
   }
@@ -479,7 +511,7 @@ section {
   font-size: 3.5rem;
   font-weight: 900;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   #aboutFooter {
     top: 0;
   }
@@ -514,7 +546,12 @@ section {
   font-weight: 650;
   background: linear-gradient(to right, rgba(90, 63, 55, 0.6), rgba(44, 119, 68, 0.6));
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .why .productInfo {
+    width: 95%;
+  }
+}
+@media (max-width:420px) {
   .why .productInfo {
     flex-direction: column;
     width: 100%;
@@ -523,20 +560,31 @@ section {
 }
 .why .productInfo .textBox {
   letter-spacing: 1.5em;
-  height: 90%;
+  height: 100%;
   line-height: 5120%;
   width: 435em;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .why .productInfo .textBox {
+    margin-bottom: 2em;
+  }
+}
+@media (max-width:420px) {
   .why .productInfo .textBox {
     width: 90%;
+    margin: 0;
   }
 }
 .why .border {
   height: 85%;
   border: 2px solid black;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .why .border {
+    border: none;
+  }
+}
+@media (max-width:420px) {
   .why .border {
     border: none;
   }
@@ -545,12 +593,12 @@ section {
   height: 95%;
   width: 450em;
 }
-@media (max-width:1024px) {
+@media (max-width:1100px) {
   .why img {
-    width: 320em;
+    width: 300em;
   }
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .why img {
     width: 100%;
   }
@@ -565,9 +613,9 @@ section {
 .why p {
   font-size: 2.5rem;
 }
-@media (max-width:1024px) {
+@media (max-width:1100px) {
   .why p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 .textSection {
@@ -579,7 +627,7 @@ section {
   background: linear-gradient(to top, #8daa91, #95B8D1);
   text-align: center;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .textSection {
     height: 180em;
   }
@@ -587,7 +635,7 @@ section {
 .textSection h3 {
   font-size: 10rem;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .textSection h3 {
     font-size: 8rem;
   }
@@ -597,7 +645,7 @@ section {
   font-weight: 650;
   color: #161616;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .textSection p {
     font-size: 1.7rem;
     line-height: 1em;
@@ -614,7 +662,13 @@ section {
   background-size: 100%;
   max-width: 100;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .textSection .textContainer {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width:420px) {
   .textSection .textContainer {
     width: 100%;
     height: 100%;
@@ -635,7 +689,7 @@ section {
   width: 80%;
   flex-direction: column;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .textSection .textContainer .area .text {
     width: 95%;
   }
@@ -645,16 +699,22 @@ section {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 200%;
+  height: 220%;
   background: linear-gradient(to top, #8daa91, #95B8D1);
   padding-bottom: 20em;
   padding-top: 20em;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .product {
+    height: 320em;
+    padding-top: 0;
+  }
+}
+@media (max-width:420px) {
   .product {
     flex-direction: column;
     padding: 0;
-    height: 430em;
+    height: 100%;
   }
 }
 .product .productInfo {
@@ -664,9 +724,17 @@ section {
   width: 90%;
   height: 85%;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .product .productInfo {
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width:420px) {
   .product .productInfo {
     flex-direction: column;
+    text-align: center;
   }
 }
 .product .productInfo .titleImage {
@@ -677,7 +745,13 @@ section {
   flex-direction: column;
   padding-right: 40em;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .product .productInfo .titleImage {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (max-width:420px) {
   .product .productInfo .titleImage {
     padding: 0;
     width: 100%;
@@ -690,7 +764,12 @@ section {
 .product .productInfo .titleImage img {
   width: 650em;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .product .productInfo .titleImage img {
+    width: 75%;
+  }
+}
+@media (max-width:420px) {
   .product .productInfo .titleImage img {
     width: 110%;
     margin-bottom: 50em;
@@ -701,7 +780,15 @@ section {
   border-right: 2px solid black;
   height: 350em;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .product .productInfo .border {
+    display: none;
+    position: absolute;
+    border: 0;
+    height: 0;
+  }
+}
+@media (max-width:420px) {
   .product .productInfo .border {
     border: 0;
     height: 0;
@@ -717,7 +804,12 @@ section {
   padding-top: 30em;
   padding-left: 40em;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  .product .productInfo .textBox {
+    padding: 15em 0 0 0;
+  }
+}
+@media (max-width:420px) {
   .product .productInfo .textBox {
     padding: 0;
     text-align: center;
@@ -738,11 +830,17 @@ section {
   padding-top: 20em;
   background: linear-gradient(to top, #8daa91, #95B8D1);
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  #reverse {
+    height: 320em;
+    padding-top: 0;
+  }
+}
+@media (max-width:420px) {
   #reverse {
     padding: 0;
     text-align: center;
-    height: 400em;
+    height: 100%;
   }
 }
 #reverse .productInfo {
@@ -753,7 +851,14 @@ section {
   flex-direction: row-reverse;
   height: 85%;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  #reverse .productInfo {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width:420px) {
   #reverse .productInfo {
     flex-direction: column;
     justify-content: center;
@@ -768,7 +873,13 @@ section {
   padding-right: 0;
   padding-left: 40em;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  #reverse .productInfo .titleImage {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width:420px) {
   #reverse .productInfo .titleImage {
     width: 110%;
     padding: 0;
@@ -778,10 +889,20 @@ section {
   padding-bottom: 0.5em;
   font-size: 5rem;
 }
+@media (max-width:1100px) {
+  #reverse .productInfo .titleImage h3 {
+    padding: 0.5em 0;
+  }
+}
 #reverse .productInfo .titleImage img {
   width: 650em;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  #reverse .productInfo .titleImage img {
+    width: 75%;
+  }
+}
+@media (max-width:420px) {
   #reverse .productInfo .titleImage img {
     width: 100%;
     margin-bottom: 50em;
@@ -792,7 +913,7 @@ section {
   border-right: 2px solid black;
   height: 350em;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   #reverse .productInfo .border {
     border: none;
     height: 0;
@@ -809,7 +930,12 @@ section {
   padding-left: 0;
   padding-right: 40em;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  #reverse .productInfo .textBox {
+    padding: 15em 0 0 0;
+  }
+}
+@media (max-width:420px) {
   #reverse .productInfo .textBox {
     padding: 0;
     text-align: center;
@@ -824,7 +950,7 @@ section {
   height: 150em;
   text-align: center;
 }
-@media (max-width:768px) {
+@media (max-width:420px) {
   .contact {
     height: 200em;
   }
@@ -875,7 +1001,12 @@ footer {
   font-size: 5rem;
   margin-top: 1em;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+  footer {
+    font-size: 4rem;
+  }
+}
+@media (max-width:420px) {
   footer {
     font-size: 3rem;
     height: 2em;
