@@ -4,74 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
+    <div class = "aboutContainer">
 
-        <h1>Trip Split</h1>
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="home.html">Product</a>
-            <button>Register</button>
-            <button>Log in</button>
-        </nav>
+        <header class = "aboutHeader">
 
-    </header>
+            <div class = "navBar">
 
-    <section id = "about">
+                <h1 class = "logo">
+                    <img src="img/blackIcon.png" alt="Logo">
+                </h1>
+            
+                <nav class = "aboutNav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html">Product</a>
+                    <a href="#contact">Contact</a>
+                    <div class = "buttons">
+                        <button class = "register">Register</button>
+                        <button class = "logIn">Log in</button>          
+                    </div>
+                </nav>
 
-        <div class = "studentInfo">
-            <img src="" alt="Picture of person">
-            <p>Name</p>
-            <p>Cohort</p>
-            <p>Role</p>
-        </div>
+            </div>
 
-        <div class = "studentInfo">
-            <img src="" alt="Picture of person">
-            <p>Name</p>
-            <p>Cohort</p>
-            <p>Role</p>
-        </div>
+        </header>
 
-        <div class = "studentInfo">
-            <img src="" alt="Picture of person">
-            <p>Name</p>
-            <p>Cohort</p>
-            <p>Role</p>
-        </div>
+        <section id = "about"> 
+            <div class = "text">
+                <h2>Meet the team!</h2> 
+            </div>
+            <div class = "students">
+                
+                <div class = "studentInfo" id = "vinnie">
+                    <img src="img/Vinnie.png" alt="Picture of Vinnie">
+                    <a href="https://github.com/vinnihoke">
+                    <p class = "underline">Vinnie Hoke</p>
+                    <p class ="italic">WEBPT7</p>
+                    <p class="italic">WEB26SL</p></a>
+                </div>
 
-        <div class = "studentInfo">
-            <img src="" alt="Picture of person">
-            <p>Name</p>
-            <p>Cohort</p>
-            <p>Role</p>
-        </div>
+                <div class = "studentInfo" id = "alve">
+                    <img src="img/Alve.png" alt="Picture of Alve">
+                    <a href="https://github.com/Gremlin4544">
+                    <p class = "underline">Alve McKethen</p>
+                    <p class ="italic">WEB25</p>
+                    <p class ="italic">REACT I</p></a>
+                </div>
 
-        <div class = "studentInfo">
-            <img src="" alt="Picture of person">
-            <p>Name</p>
-            <p>Cohort</p>
-            <p>Role</p>
-        </div>
+                <div class = "studentInfo" id = "daniel">
+                   <img src="img/Daniel.png" alt="Picture of Daniel">
+                    <a href="https://github.com/danfrrr13">
+                    <p class = "underline">Daniel Ferrer</p>
+                    <p class ="italic">WEB24</p>
+                    <p class ="italic">REACT II</p></a> 
+                </div>
 
-    </section>
+                <div class = "studentInfo" id = "grissobel">
+                    <img src="img/Grissobel.png" alt="Picture of Grissobel">
+                    <a href="https://github.com/gspayonk">
+                    <p class = "underline">Grissobel Payonk</p>
+                    <p class ="italic">WEB23</p>
+                    <p class ="italic">Backend Developer</p></a> 
+                </div>
 
-    <section>
-        <div class = "contact">
-            <form class = "contactForm">
-                <input type="text" name="name" id = "name" placeholder="Name">
-                <input type="text" name="email"  id = "email" placeholder="Email">
-                <input type="text" name="reason" id="reason" placeholder="Tell us the reason for contacting.">
-            </form>
-        </div>
-    </section>
-    
-    <footer>
-        ©Lambda School Training Program. This layout was designed by Issac Moreno
-    </footer>
+                <div class = "studentInfo" id = "issac">
+                    <img src="img/Issac.png" alt="Picture of Issac">
+                    <a href="https://github.com/Issac909">
+                    <p class = "underline">Issac Moreno</p>
+                    <p class ="italic">WEB26</p>
+                    <p class ="italic">User Interface</p></a> 
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <section>
+            <div class = "contact">
+                <form class = "contactForm">
+                    <input type="text" name="name" id = "name" placeholder="Name">
+                    <input type="text" name="email"  id = "email" placeholder="Email">
+                    <input type="text" name="reason" id="reason" placeholder="Tell us the reason for contacting.">
+                </form>
+            </div>
+        </section> -->
+
+    <footer id = "aboutFooter">
+        <p>©Lambda School Training Program. This layout was designed by Issac Moreno</p>   
+    </footer>    
+</div>
 </body>
 </html>
