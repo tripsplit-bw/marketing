@@ -1,20 +1,17 @@
 .mainContainer {
-	background: linear-gradient(10deg,#95b8d1, #666a86);
-  background-size:400% 400%;	
-  .flex(center,center, 100%);
+  background: linear-gradient(10deg, #95b8d1, #666a86);
+  background-size: 400% 400%;
+  .flex(center, center, 100%);
   flex-direction: column;
 }
 
 .why {
-
   .flex(space-between, center, 100%);
   flex-direction: column;
   height: 220%;
   background: @midSection-bg;
   padding-bottom: 20em;
   padding-top: 20em;
-
-
 
   .productInfo {
     .flex(space-around, center, 75%);
@@ -24,24 +21,32 @@
     background: linear-gradient(
       to right,
       rgba(90, 63, 55, 0.6),
-      rgba(44, 119, 68, 0.6));
+      rgba(44, 119, 68, 0.6)
+    );
 
-      @media @phone {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-      }
-    
+    @media @tablet {
+      width: 95%;
+    }
+
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
 
     .textBox {
       letter-spacing: 1.5em;
-      height: 90%;
+      height: 100%;
       line-height: 5120%;
       width: 435em;
 
+      @media @tablet {
+        margin-bottom: 2em;
+      }
+
       @media @phone {
         width: 90%;
-
+        margin: 0;
       }
     }
   }
@@ -49,6 +54,10 @@
   .border {
     height: 85%;
     border: 2px solid black;
+
+    @media @tablet {
+      border: none;
+    }
 
     @media @phone {
       border: none;
@@ -60,7 +69,7 @@
     width: 450em;
 
     @media @tablet {
-      width: 320em;
+      width: 300em;
     }
 
     @media @phone {
@@ -79,10 +88,9 @@
     font-size: 2.5rem;
 
     @media @tablet {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
-
 } //WHY
 
 .textSection {
@@ -122,8 +130,12 @@
     height: 85%;
     background-image: url("../img/currency.jpg");
     background-size: 100%;
-
     max-width: 100;
+
+    @media @tablet {
+      width: 100%;
+      height: 100%;
+    }
 
     @media @phone {
       width: 100%;
@@ -153,29 +165,45 @@
 
 .product {
   .flex(space-around, center, 100%);
-  height: 200%;
+  height: 220%;
   background: @midSection-bg;
   padding-bottom: 20em;
   padding-top: 20em;
 
+  @media @tablet {
+    height: 320em;
+    padding-top: 0;
+  }
+
   @media @phone {
     flex-direction: column;
     padding: 0;
-    height: 430em;
+    height: 100%;
   }
 
   .productInfo {
     .flex(space-between, center, 90%);
     height: 85%;
 
+    @media @tablet {
+      height: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+
     @media @phone {
       flex-direction: column;
+      text-align: center;
     }
     .titleImage {
       .flex(center, center, 50%);
       flex-direction: column;
       padding-right: 40em;
 
+      @media @tablet {
+        padding: 0;
+        width: 100%;
+      }
       @media @phone {
         padding: 0;
         width: 100%;
@@ -187,24 +215,35 @@
       }
       img {
         width: 650em;
-        
+
+        @media @tablet {
+          width: 75%;
+        }
+
         @media @phone {
           width: 110%;
           margin-bottom: 50em;
         }
       }
-   } //TITLE IMAGE
+    } //TITLE IMAGE
 
     .border {
       border-left: 2px solid black;
       border-right: 2px solid black;
       height: 350em;
 
-      @media @phone {
-        border:0;
+      @media @tablet {
+        display: none;
+        position: absolute;
+        border: 0;
         height: 0;
       }
-    }//BORDER
+
+      @media @phone {
+        border: 0;
+        height: 0;
+      }
+    } //BORDER
 
     .textBox {
       .flex(center, center, 100%);
@@ -212,6 +251,10 @@
       letter-spacing: 1.5em;
       padding-top: 30em;
       padding-left: 40em;
+
+      @media @tablet {
+        padding: 15em 0 0 0;
+      }
 
       @media @phone {
         padding: 0;
@@ -223,7 +266,7 @@
         font-size: 2rem;
         color: @black;
       }
-    }//TEXT BOX
+    } //TEXT BOX
   } //PRODUCT INFO
 } //PRODUCT
 
@@ -234,16 +277,27 @@
   padding-top: 20em;
   background: @midSection-bg;
 
+  @media @tablet {
+    height: 320em;
+    padding-top: 0;
+  }
+
   @media @phone {
-    padding : 0;
+    padding: 0;
     text-align: center;
-    height: 420em;
+    height: 100%;
   }
 
   .productInfo {
     .flex(space-between, center, 90%);
     flex-direction: row-reverse;
     height: 85%;
+
+    @media @tablet {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
 
     @media @phone {
       flex-direction: column;
@@ -256,6 +310,11 @@
       padding-right: 0;
       padding-left: 40em;
 
+      @media @tablet {
+        width: 100%;
+        padding: 0;
+      }
+
       @media @phone {
         width: 110%;
         padding: 0;
@@ -264,10 +323,18 @@
       h3 {
         padding-bottom: 0.5em;
         font-size: 5rem;
+
+        @media @tablet {
+          padding: 0.5em 0;
+        }
       }
 
       img {
         width: 650em;
+
+        @media @tablet {
+          width: 75%;
+        }
 
         @media @phone {
           width: 100%;
@@ -295,6 +362,10 @@
       padding-left: 0;
       padding-right: 40em;
 
+      @media @tablet {
+        padding: 15em 0 0 0;
+      }
+
       @media @phone {
         padding: 0;
         text-align: center;
@@ -310,50 +381,70 @@
 } //REVERSE
 
 .contact {
-  height: 150em;
+  height: 200em;
   text-align: center;
 
   @media @phone {
-    height: 200em;
+    height: 250em;
   }
 
   .contactContainer {
     .flex(space-around, center, 100%);
     flex-direction: column;
-     
+
     p {
-    font-size: 2rem;
-    font-weight: 800;
-  }
+      font-size: 2rem;
+      font-weight: 800;      
+      letter-spacing: 0.15em;
+      padding-top: 1em;
+    }
     .contactForm {
-      .flex(center,center,100%);
+      .flex(center, center, 100%);
       flex-direction: column;
 
+      .buttons {
+        width: 25%;
 
+        @media @phone {
+          width: 50%;
+        }
+
+        .submit {
+          border-radius: 10px;
+          margin-top: 2em;
+          width: 80%;
+          height: 60%;
+          background: @register;
+          color: white;
+          font-size: 2.5rem;
+
+          &:hover {
+            background: @login;
+            color: @black;
+          }
+
+          @media @phone {
+            padding: 4% 0;
+          }
+        }
+      }
       input {
         width: 25em;
         height: 2.5em;
-
-
       }
     }
     h3 {
       font-size: 3rem;
     }
-    p {
-      letter-spacing: 0.15em;
-      padding-top: 1em;
-      font-size: 2rem;
-    }
   } //CONTACT CONTAINER
 
   #reason {
     height: 7em;
-    }      
+  }
   .name {
     margin-bottom: 1em;
-    }
-}//CONTACT
+  }
+} //CONTACT
 
 footer {
   .flex(center, center, 100%);
@@ -361,6 +452,11 @@ footer {
   height: 1em;
   font-size: 5rem;
   margin-top: 1em;
+  text-align: center;
+
+  @media @tablet {
+    font-size: 4rem;
+  }
 
   @media @phone {
     font-size: 3rem;
@@ -368,4 +464,3 @@ footer {
     text-align: center;
   }
 }
-
