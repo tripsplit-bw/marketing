@@ -1,20 +1,17 @@
 .mainContainer {
-	background: linear-gradient(10deg,#95b8d1, #666a86);
-  background-size:400% 400%;	
-  .flex(center,center, 100%);
+  background: linear-gradient(10deg, #95b8d1, #666a86);
+  background-size: 400% 400%;
+  .flex(center, center, 100%);
   flex-direction: column;
 }
 
 .why {
-
   .flex(space-between, center, 100%);
   flex-direction: column;
   height: 220%;
   background: @midSection-bg;
   padding-bottom: 20em;
   padding-top: 20em;
-
-
 
   .productInfo {
     .flex(space-around, center, 75%);
@@ -24,18 +21,18 @@
     background: linear-gradient(
       to right,
       rgba(90, 63, 55, 0.6),
-      rgba(44, 119, 68, 0.6));
+      rgba(44, 119, 68, 0.6)
+    );
 
-      @media @tablet {
-        width: 95%;
-      }
+    @media @tablet {
+      width: 95%;
+    }
 
-      @media @phone {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-      }
-    
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
 
     .textBox {
       letter-spacing: 1.5em;
@@ -47,11 +44,9 @@
         margin-bottom: 2em;
       }
 
-
       @media @phone {
         width: 90%;
         margin: 0;
-
       }
     }
   }
@@ -96,7 +91,6 @@
       font-size: 1.8rem;
     }
   }
-
 } //WHY
 
 .textSection {
@@ -181,7 +175,6 @@
     padding-top: 0;
   }
 
-
   @media @phone {
     flex-direction: column;
     padding: 0;
@@ -226,13 +219,13 @@
         @media @tablet {
           width: 75%;
         }
-        
+
         @media @phone {
           width: 110%;
           margin-bottom: 50em;
         }
       }
-   } //TITLE IMAGE
+    } //TITLE IMAGE
 
     .border {
       border-left: 2px solid black;
@@ -242,15 +235,15 @@
       @media @tablet {
         display: none;
         position: absolute;
-        border:0;
+        border: 0;
         height: 0;
       }
 
       @media @phone {
-        border:0;
+        border: 0;
         height: 0;
       }
-    }//BORDER
+    } //BORDER
 
     .textBox {
       .flex(center, center, 100%);
@@ -263,7 +256,6 @@
         padding: 15em 0 0 0;
       }
 
-
       @media @phone {
         padding: 0;
         text-align: center;
@@ -274,7 +266,7 @@
         font-size: 2rem;
         color: @black;
       }
-    }//TEXT BOX
+    } //TEXT BOX
   } //PRODUCT INFO
 } //PRODUCT
 
@@ -291,7 +283,7 @@
   }
 
   @media @phone {
-    padding : 0;
+    padding: 0;
     text-align: center;
     height: 100%;
   }
@@ -336,7 +328,6 @@
           padding: 0.5em 0;
         }
       }
-      
 
       img {
         width: 650em;
@@ -390,50 +381,70 @@
 } //REVERSE
 
 .contact {
-  height: 150em;
+  height: 200em;
   text-align: center;
 
   @media @phone {
-    height: 200em;
+    height: 250em;
   }
 
   .contactContainer {
     .flex(space-around, center, 100%);
     flex-direction: column;
-     
+
     p {
-    font-size: 2rem;
-    font-weight: 800;
-  }
+      font-size: 2rem;
+      font-weight: 800;      
+      letter-spacing: 0.15em;
+      padding-top: 1em;
+    }
     .contactForm {
-      .flex(center,center,100%);
+      .flex(center, center, 100%);
       flex-direction: column;
 
+      .buttons {
+        width: 25%;
 
+        @media @phone {
+          width: 50%;
+        }
+
+        .submit {
+          border-radius: 10px;
+          margin-top: 2em;
+          width: 80%;
+          height: 60%;
+          background: @register;
+          color: white;
+          font-size: 2.5rem;
+
+          &:hover {
+            background: @login;
+            color: @black;
+          }
+
+          @media @phone {
+            padding: 4% 0;
+          }
+        }
+      }
       input {
         width: 25em;
         height: 2.5em;
-
-
       }
     }
     h3 {
       font-size: 3rem;
     }
-    p {
-      letter-spacing: 0.15em;
-      padding-top: 1em;
-      font-size: 2rem;
-    }
   } //CONTACT CONTAINER
 
   #reason {
     height: 7em;
-    }      
+  }
   .name {
     margin-bottom: 1em;
-    }
-}//CONTACT
+  }
+} //CONTACT
 
 footer {
   .flex(center, center, 100%);
@@ -441,6 +452,7 @@ footer {
   height: 1em;
   font-size: 5rem;
   margin-top: 1em;
+  text-align: center;
 
   @media @tablet {
     font-size: 4rem;
@@ -452,4 +464,3 @@ footer {
     text-align: center;
   }
 }
-
