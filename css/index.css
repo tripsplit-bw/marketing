@@ -263,6 +263,19 @@ header #headerContainer {
     width: 80%;
   }
 }
+@media (max-width:768px) {
+  header #headerContainer {
+    height: 100%;
+  }
+}
+@media (max-width:768px) {
+  header #headerContainer .logo {
+    width: 100%;
+  }
+}
+header #headerContainer .logo img {
+  width: 100%;
+}
 header .navBar {
   display: flex;
   font-size: 8rem;

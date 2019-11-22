@@ -20,15 +20,36 @@ header {
     padding-top: 25em;
 
     .logo {
-
       @media @tablet {
           width: 100%;
       }
-      @media @phone {
+      
+    @media @phone {
+        height: 130em;
+    }
+
+    #headerContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
         width: 100%;
       }
 
-      img {
+        @media @phone {
+            height: 100%;
+        }
+
+
+        .logo {
+            @media @phone {
+                width : 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
 
         @media @tablet {
             width: 55%;
