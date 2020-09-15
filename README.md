@@ -1,8 +1,8 @@
 ## Project title
-A marketing page that was made to detail Trip Split's project goals. Trip Split is an app that allows you to add friends and set up tracking of money spent during a trip so all participating members can pay their fair share.
+Trip Split
 
 ## Motivation
-This app was made for that person in your travel group that you feel a little guilty for picking up the bill often. Keep track of purchases made within your group in order to split the cost of the fun of the trip.
+A marketing page that was made to detail Trip Split's project goals. Trip Split is an app that allows you to add friends and set up tracking of money spent during a trip so all participating members can pay their fair share. This app was made for that person in your travel group that you feel a little guilty for picking up the bill often. Keep track of purchases made within your group in order to split the cost of the fun of the trip.
 
 ## Code style
 Formatted using Prettier and Beautify
